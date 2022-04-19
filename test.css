@@ -1,0 +1,72 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.scroll {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; /* [1] */
+    overflow-x: auto; /* [2] */
+    -webkit-overflow-scrolling: touch; /* [3] */
+    -ms-overflow-style: -ms-autohiding-scrollbar; /* [4] */ }
+
+
+.scroll::-webkit-scrollbar {
+    display: none; }
+
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+
+.sectionaccordion{
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: rgba(182, 152, 87, 0.63);
+    display: none;
+    overflow: hidden;
+}
+ .accordion {
+     padding-left: 2rem;
+     display: flex;
+     position: relative;
+     overflow: hidden;
+ }
+
+.accordion::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    padding-right: 2rem;
+}
