@@ -67,7 +67,7 @@ section {
 .content {
   flex: 1 1 62rem;
 }
-.content h3 {
+.content .prez {
   color: white;
   font-size: 4rem;
   padding-bottom: 0.5rem;
@@ -151,7 +151,7 @@ section {
 #apropos .row .info-container {
   flex: 1 1 42rem;
 }
-#apropos .row .info-container h1 {
+#apropos .row .info-container h2 {
   color: white;
   text-transform: uppercase;
   font-size: 2.7rem;
@@ -293,7 +293,7 @@ section {
   height: 25rem;
 }
 
-.footer .reseau h3 {
+.footer .reseau h2 {
   text-align: center;
   color: #aaa;
   text-transform: uppercase;

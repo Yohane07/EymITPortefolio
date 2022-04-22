@@ -89,12 +89,11 @@ section{
 .content {
   flex: 1 1 62rem;
 
-  h3{
+  .prez{
     color: white;
     font-size: 4rem;
     padding-bottom:.5rem ;
   }
-
   span{
     font-size: 3rem;
     color: $darkorange;
@@ -184,7 +183,7 @@ section{
 
     .info-container{
       flex: 1 1 42rem;
-      h1{
+      h2{
         color: white;
         text-transform: uppercase;
         font-size: 2.7rem;
@@ -362,7 +361,7 @@ section{
 .footer {
   .reseau {
 
-    h3 {
+    h2 {
       text-align: center;
       color: $light-color;
       text-transform: uppercase;

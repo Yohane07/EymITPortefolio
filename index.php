@@ -9,23 +9,24 @@
 	<link rel="stylesheet" href="style.css">
 	<!-- font awesome cdn -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-	<title>Home</title>
+	<title>Yohane ENDOKE - Développeur Fullstack</title>
+	<meta name="description" content="Portefolio de Yohane ENDOKE, développeur fullstack à Nantes, en recherche
+			d'alternance  le développement web dans le cadre d'un Bachelor IT parcours DEVOPS ">
 </head>
 
 
 <body>
-
 <section class="home">
 	<div class="image">
-		<img src="Images/Yoh.jpg" alt="" >
+		<img src="Images/Yoh.jpg" alt="Photo de Yohane ENDOKE" >
 	</div>
 
 	<div class="content">
-		<h3>Bonjour, je suis Yohane ENDOKE</h3>
+		<div class="prez">Bonjour, je suis Yohane ENDOKE</div>
 		<span>Développeur Fullstack</span>
 		<p>J'ai 22 ans je suis étudiant en deuxième année d'un parcours Bachelor informatique
-			à l'EPSI, passionné de développement et un penchant plus prononcé pour tout ce qui
-			concerne le web
+			à l'EPSI, passionné de développement et un attrait plus prononcé pour tout ce qui
+			concerne le web!
 		</p>
 		<a href="#apropos" class="btn">A propos de moi <i class="fas fa-user"></i></a>
 	</div>
@@ -47,14 +48,14 @@
 	<h1 class="heading"> A propos de <span>moi</span></h1>
 	<div class="row">
 		<div class="info-container">
-			<h1>Informations personnelles</h1>
+			<h2>Informations personnelles</h2>
 		<div class="box-container">
 			<div class="box">
 				<h3>ENDOKE</h3>
 				<h3>Yohane</h3>
 				<h3>22 ans</h3>
 				<h3><address>Nantes</address></h3>
-				<form method="get" action="cv/yohaneendoke.pdf">
+				<form method="get" action="cv-yohane-endoke/yohaneendoke.pdf">
 					<button class="btn" type="submit">CV<span class="fas fa-download"></span></button>
 				</form>
 			</div>
@@ -196,12 +197,12 @@
 		 <?php
 		 	if(isset($POST["message"])){
 				 $message = "Depuis le formulaire de contact de yohane-endoke.fr
-				 Nom et Prénom:".$POST["nom"]."
-				 Telephone:".$POST["telephone"]."
-				 Message:".$POST["message"];
+				 Nom et Prénom: ".$POST["nom"]."
+				 Telephone: ".$POST["telephone"]."
+				 Message: ".$POST["message"];
 
 				 $retourParMail = mail("myohane07@gmail.com", $POST["sujet"], $POST["message"],
-				 "From: contact@yohaneendoke.fr". "\r\n" . "Reply-to:" . $POST["email"]);
+				 "From: contact@yohane-endoke.fr". "\r\n" . "Reply-to:" . $POST["email"]);
 				 if ($retourParMail){
 					 echo "<p>Votre mail a bien été envoyé</p>";
 				 }
@@ -213,7 +214,7 @@
  <!-- Fin section contact-->
  <section class="footer">
 	 <div class="reseau">
-		 <h3>Retrouvez-moi sur</h3>
+		 <h2>Retrouvez-moi sur</h2>
 		 <div class="socialmedia">
 			 <a href="https://www.linkedin.com/in/yohane-endoke-314695185/" class="fab fa-linkedin">
 				 Yohane ENDOKE
