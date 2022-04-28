@@ -57,7 +57,7 @@
 					<h3>
 						<address>Nantes</address>
 					</h3>
-					<form method="get" action="cv-yohane-endoke/yohaneendoke.pdf">
+					<form method="get" action="cv-yohane-endoke/cv_yohane_endoke.pdf">
 						<button class="btn" type="submit">CV<span class="fas fa-download"></span></button>
 					</form>
 				</div>
