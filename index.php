@@ -207,7 +207,8 @@
         $retourParMail = mail("myohane07@gmail.com", $_POST["sujet"], $detailsDuMail,
             "From:contact@yohane-endoke.fr" . "\r\n" . "Reply-to:" . $_POST["email"]);
         if ($retourParMail) {
-            echo "<p>Votre mail a bien été envoyé</p>";
+			$messageAlerte="Votre mail a bien été envoyé";
+            echo "<script type='text/javascript'>alert('$messageAlerte');</script>";
         }
     }
     ?>
